@@ -1,0 +1,193 @@
+3.1 Gradient Descent là thuật toán được sử dụng chủ yếu để:
+A. Giảm số chiều dữ liệu.
+B. Tối ưu hóa hàm mục tiêu bằng cách tìm cực trị.
+C. Phân cụm dữ liệu.
+D. Trực quan hóa dữ liệu.
+
+//B
+3.2 Trong Gradient Descent, tham số \(\eta\) (learning rate) có ý nghĩa là:
+A. Số lượng dữ liệu huấn luyện.
+B. Số vòng lặp.
+C. Kích thước bước cập nhật tham số.
+D. Độ chính xác của mô hình.
+
+//C
+3.3 Công thức cập nhật tham số \(w\) trong Gradient Descent là:
+A. \(w=w+\eta\nabla L(w)\)
+B. \(w=w-\eta\nabla L(w)\)
+C. \(w=\eta\nabla L(w)\)
+D. \(w=-\nabla L(w)\)
+
+//C
+3.4 Điều kiện dừng thường dùng của Gradient Descent là:
+A. Gradient xấp xỉ bằng 0.
+B. Dữ liệu huấn luyện hết.
+C. Sai số bằng 1.
+D. Learning rate bằng 0.
+
+//A
+3.5 Nếu learning rate quá nhỏ thì:
+A. Thuật toán phân kỳ.
+B. Hội tụ chậm.
+C. Không cập nhật trọng số.
+D. Luôn tìm được nghiệm tối ưu toàn cục.
+
+//B
+3.6 Nếu learning rate quá lớn thì:
+A. Hội tụ chậm.
+B. Không ảnh hưởng kết quả.
+C. Có thể dao động lớn và bỏ qua điểm tối ưu.
+D. Gradient luôn bằng 0.
+
+//C
+3.7 Batch Gradient Descent sử dụng:
+A. Một mẫu dữ liệu mỗi lần cập nhật.
+B. Một mini-batch dữ liệu.
+C. Toàn bộ tập huấn luyện.
+D. Chỉ dữ liệu kiểm tra.
+
+//C
+3.8 Độ phức tạp tính toán cho mỗi lần cập nhật của Batch Gradient Descent là:
+A. \(O(1)\)
+B. \(O(\log N)\)
+C. \(O(N)\)
+D. \(O(N^2)\)
+
+//C
+3.9 Stochastic Gradient Descent cập nhật trọng số dựa trên:
+A. Toàn bộ dữ liệu.
+B. Một mẫu dữ liệu ngẫu nhiên.
+C. Một mini-batch.
+D. Tập kiểm tra.
+
+//B
+3.10 Ưu điểm lớn nhất của SGD là:
+A. Luôn hội tụ tới tối ưu toàn cục.
+B. Chi phí cập nhật thấp.
+C. Không cần learning rate.
+D. Không phụ thuộc dữ liệu.
+
+//B
+3.11 Mini-batch Gradient Descent kết hợp ưu điểm của:
+A. KNN và SVM.
+B. SGD và Decision Tree.
+C. Batch GD và SGD.
+D. PCA và K-Means.
+
+//C
+3.12 Thuật toán Perceptron được đề xuất bởi:
+A. Geoffrey Hinton.
+B. Yann LeCun.
+C. Frank Rosenblatt.
+D. Andrew Ng.
+
+//C
+3.13 Perceptron được thiết kế cho bài toán:
+A. Hồi quy tuyến tính.
+B. Phân lớp nhị phân.
+C. Phân cụm.
+D. Giảm chiều dữ liệu.
+
+//B
+3.14 Trong Perceptron, nhãn của một mẫu \(x\) được xác định dựa trên:
+A. Khoảng cách Euclid.
+B. Dấu của \(w^T x\).
+C. Giá trị trung bình.
+D. Hàm sigmoid.
+
+//B
+3.15 Quy tắc cập nhật trọng số của Perceptron là:
+A. \(w=w-yx\)
+B. \(w=x-yw\)
+C. \(w=w+yw\)
+D. \(w=w+yx\)
+
+//D
+3.16 Precision được tính bằng:
+A. \(\dfrac{TP}{TP+FN}\)
+B. \(\dfrac{TP}{TP+FP}\)
+C. \(\dfrac{TP+TN}{N}\)
+D. \(\dfrac{TN}{TN+FP}\)
+
+//A
+3.17 F1-score là:
+A. Trung bình điều hòa của Precision và Recall.
+B. Trung bình hình học của Precision và Recall.
+C. Trung bình cộng của Precision và Recall.
+D. Sai số trung bình.
+
+//B
+3.18 Trong bài toán phát hiện gian lận, đo lường nào quan trọng hơn Accuracy?
+A. Precision và Recall.
+B. Trung bình cộng.
+C. Sai số trung bình.
+D. Số vòng lặp.
+//A
+3.19 Một tập dữ liệu có 50.000 mẫu. Để huấn luyện mô hình theo thời gian thực (online learning), phương pháp phù hợp nhất là:
+A. Batch Gradient Descent.
+B. Perceptron với learning rate bằng 0.
+C. Phương pháp giải đạo hàm bằng hàm.
+D. Stochastic Gradient Descent.
+
+//D
+3.20 Giả sử một mini-batch có kích thước \(k=50\) và tập dữ liệu có \(N=1000\) mẫu. Một epoch của Mini-batch Gradient Descent thực hiện bao nhiêu lần cập nhật trọng số?
+A. 50
+B. 1000
+C. 500
+D. 20
+
+//D
+Câu 3.21. Trình bày ý tưởng cơ bản của thuật toán Gradient Descent
+1. Ý tưởng cơ bản
+
+Gradient Descent (hạ gradient) là thuật toán tối ưu dùng để tìm giá trị tham số làm cho hàm mất mát đạt cực tiểu.
+
+Thuật toán bắt đầu từ một giá trị tham số ban đầu, tính gradient của hàm mất mát rồi cập nhật tham số theo hướng ngược với gradient.
+
+2. Tại sao di chuyển ngược hướng gradient?
+
+Gradient chỉ hướng tăng nhanh nhất của hàm mất mát. Vì vậy, đi theo hướng ngược gradient giúp hàm mất mát giảm nhanh nhất tại vị trí hiện tại, với bước đi đủ nhỏ.
+
+3. Vai trò của learning rate
+
+Learning rate quyết định độ lớn của mỗi bước cập nhật tham số:
+- Quá nhỏ: hội tụ chậm.
+- Quá lớn: có thể vượt qua điểm cực tiểu, dao động hoặc không hội tụ.
+- Hợp lý: giúp giảm hàm mất mát hiệu quả và ổn định.
+4. Điều kiện dừng
+
+Thuật toán có thể dừng khi:
+- Hàm mất mát thay đổi rất nhỏ.
+- Gradient gần bằng 0.
+- Tham số thay đổi rất nhỏ.
+- Đạt số vòng lặp tối đa.
+Câu 3.24. Trình bày nguyên lý hoạt động của thuật toán Perceptron
+1. Bài toán mà Perceptron giải quyết
+
+Perceptron là thuật toán học máy có giám sát, dùng để giải quyết bài toán phân loại nhị phân, tức phân loại dữ liệu thành hai lớp, ví dụ: đạt/không đạt, gian lận/không gian lận.
+
+2. Khái niệm siêu phẳng phân tách
+
+Perceptron tìm một ranh giới tuyến tính để phân chia dữ liệu thuộc hai lớp.
+
+Phương trình siêu phẳng:
+w^Tx+b=0
+
+Trong đó \(w\) là vector trọng số, \(x\) là vector đặc trưng và \(b\) là hệ số chặn.
+Câu 3.25. Giải thích các độ đo đánh giá mô hình phân lớp
+Trước tiên, cần hiểu 4 giá trị:
+- TP: Dự đoán dương tính và thực tế dương tính.
+- TN: Dự đoán âm tính và thực tế âm tính.
+- FP: Dự đoán dương tính nhưng thực tế âm tính.
+- FN: Dự đoán âm tính nhưng thực tế dương tính.
+1. Accuracy — Độ chính xác tổng thể
+Tỷ lệ dự đoán đúng trên tổng số mẫu.
+Accuracy càng cao thì tỷ lệ dự đoán đúng tổng thể càng lớn.
+2. Precision — Độ chính xác của dự đoán dương tính
+Trong số các mẫu được dự đoán là dương tính, có bao nhiêu mẫu thực sự dương tính?
+3. Recall — Độ bao phủ
+Trong số các mẫu thực sự dương tính, mô hình phát hiện đúng được bao nhiêu mẫu?
+4. F1-score — Trung bình điều hòa của Precision và Recall
+F1-score cao khi cả Precision và Recall đều cao. Độ đo này hữu ích khi cần cân bằng giữa việc hạn chế báo động giả và hạn chế bỏ sót.
+Khi phát hiện bệnh hoặc gian lận giao dịch, độ đo nào quan trọng hơn Accuracy?
+Recall thường đặc biệt quan trọng, vì bỏ sót một ca bệnh hoặc một giao dịch gian lận có thể gây hậu quả nghiêm trọng. Recall cao giúp phát hiện được nhiều trường hợp dương tính thực tế hơn.

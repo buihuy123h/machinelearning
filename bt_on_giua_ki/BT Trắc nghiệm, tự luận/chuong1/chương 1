@@ -1,0 +1,129 @@
+I. Trắc nghiệm
+1.1 Theo Tom Mitchell, một chương trình được xem là “học” nếu nó cải thiện hiệu năng
+nhờ vào:
+A. Tăng số lượng lỗi CPU.
+B. Tăng dung lượng RAM.
+C. Kinh nghiệm E thu thập từ dữ liệu.
+D. Được lập trình thêm các câu lệnh if-else.
+//c
+1.2 Bài toán dự đoán giá cổ phiếu (một con số cụ thể) thuộc loại nào trong học có giám
+sát?
+A. Phân loại nhị phân.
+B. Phân loại đa lớp.
+C. Hồi quy.
+D. Phân cụm.
+
+//c
+1.3 Trong học có giám sát, tập dử liệu huấn luyện luôn bao gồm:
+A. Chỉ các vector đặc trưng.
+B. Các cặp (đặc trưng, nhãn).
+C. Các nhãn được sinh ngẫu nhiên.
+D. Không cần dử liệu.
+
+//b
+
+1.4 Phát biểu nào sau đây là đúng về học không giám sát?
+A. Yêu cầu toàn bộ dữ liệu phải có nhãn.
+B. Mục tiêu là dự đoán nhãn cho d liệu mới.
+C. Máy tự tìm cấu trúc ẩn bên trong dữ liệu không có 
+D. Luôn cho kết quả kém hơn học có giám sát.
+
+//c
+
+1.5 Thuật toán K-means thuộc nhóm:
+A. Học có giám sát - hồi quy.
+B. Học có giám sát - phân loại.
+C. Học không giám sát - phân cụm.
+D. Học tăng cường.
+// C
+1.6 Định lý Bayes được dùng để:
+A. Tính khoảng cách Euclid gi a hai điểm.
+B. Ước lượng xác suất hậu nghiệm dựa trên bằng chứng mới.
+C. Tối thiểu hóa hàm mất mát MSE.
+D. Nhân hai ma trân lớn.
+//b
+1.7 Trong công thức cập nhật của gradient descent: w: = w - nL(w), n là:
+A. Gradient của hàm mất mát.
+B. Số vòng lặp hiện tại.
+C. Tốc độ học (learning rate).
+D. Giá trị hàm mất mát hiện tại.
+//c
+1.8 Hàm mất mát nào thường được dùng cho bài toán hồi quy?
+A. Cross-entropy.
+B. Hinge loss.
+C. Mean Squared Error (MSE).
+D.Accuracy.
+//c
+1.9 Làm mượt Laplace (Laplace smoothing) trong Naive Bayes nhằm mục đích:
+A. Tăng tốc độ huấn luyện.
+B. Tránh xác suất bằng 0 cho các từ chưa từng xuất hiện trong một lớp.
+C. Giảm số chiều của vector đặc trưng.
+D. Chuẩn hóa dữ liệu về dạng phân phối chuẩn.
+//a
+1.10 Ma trận X€ Rmxn có nghĩa là:
+A. m mẫu, mỗi mẫu có n đặc trưng.
+B. n mẫu, mỗi mẫu có m đặc trưng.
+C. m đặc trưng và n nhãn.
+D. m lớp và n mầu.
+//a
+1.11 Overfitting xåy ra khi:
+A. Mô hình quá đơn giản, không nắm được quy luật dử liệu.
+B. Mô hình học cả nhiễu trong tập huấn luyện, dự đoán kém trên dữ liệu mới.
+C. Tập huấn luyện quá nhỏ nên không thể học.
+D. Tốc độ học quá cao khiến mô hình phân kỳ.
+//a
+1.12 Thuật toán nào dưới đây là học có giám sát?
+A. K-means.
+B. PCA.
+C. Cây quyết định (Decision Tree).
+D. DBSCAN.
+//c
+1.13 Học bán giám sát phủ hợp nhất khi:
+A. Tất cả dữ liệu đã có nhãn đầy đủ.
+B. Chỉ một phần nhỏ dữ liệu có nhãn, phần lớn không nhãn.
+C. Hoàn toàn không có dữ liệu có nhãn.
+D. Máy học bằng cách thử và sai với môi trường.
+//b
+1.14 Tích vô hướng của hai vector càng lớn khi chúng:
+A. Càng khác hướng.
+B. Vuông góc.
+C. Càng cùng hướng và có độ lớn lớn.
+D. Một trong hai là vector không.
+//b
+1.15 Chuẩn L2 của một vector dùng để đo:
+A. Tổng các phần tử của vector.
+B. Độ dài Euclid của vector.
+C. Phần tử lớn nhất.
+D. Số phần tử khác 0.
+//b
+1.16 Trong bài toán lọc spam, ký hiệu P("mua" | Spam) biểu thị:
+A. Xác suất một email là spam.
+B. Xác suất từ “mua” xuất hiện trong bắt kỳ email nào.
+C. Xác suất từ mua” xuất hiện với điều kiện email đó là spam.
+D. Xác suất email là spam khi thấy từ "mua”.
+//b
+1.17 Úng dụng nào sau đây không điển hình cho học máy?
+A. Nhận dạng khuôn mặt trong ảnh.
+B. Dịch tự động văn bån.
+C. Biên dịch tài liệu bằng cách tra từ điển thủ công.
+D. Phát hiện giao dịch gian lận.
+c
+1.18 Nếu tốc độ học n quá lớn, điều gì thường xảy ra với hạ gradient?
+A. Hàm mất mát giảm đều và ổn định.
+B. Hàm mất mát dao động mạnh hoặc phân kỳ.
+C. Mô hình tự điều chỉnh n.
+D. Mô hình chuyển sang trạng thải underfitting.
+//b
+1.19 Mục tiêu chính của giảm chiều dữ liệu là:
+A. Tăng số lượng đặc trưng.
+B. Giảm số chiều nhưng vẫn giử được thông tin quan trọng, giảm nhiễu.
+C. Gom dữ liệu thành các cụm.
+D. Chuyển bài toán hồi quy thành phân loại.
+//b
+1.20 Phát biểu nào đúng về Naive Bayes?
+A. Nó giå định các đặc trưng phụ thuộc lần nhau.
+B. Nó không thể dùng cho dữ liệu văn bản.
+C. Nó dựa trên Định lý Bayes và giả định các đặc trưng độc lập có điều kiện với lớp.
+D. Nó là thuật toán học không giám sát.
+//c
+

@@ -1,0 +1,161 @@
+2.1 Mục tiêu của Linear Regression là:
+A. Phân loại d liệu
+B. Dự báo giá trị liên tục
+C. Giảm số lượng dữ liệu
+D. Tăng số chiều dử liệu
+//b
+2.2 Phương trình của mô hình hồi quy tuyến tính đơn có dạng:
+A.y=wx²+b
+B. y=wx+b
+C.y=In(x+b)
+D.v=ewx+b
+//b
+2.3 Trong Linear Regression, w thường biểu diễn:
+A. Sai số mô hình
+B. Trọng sổ của các features (weight)
+C. Số lượng dữ liệu
+D. Giá trị đầu ra
+b
+2.4 Trong Linear Regression, b thường được gọi là:
+A. Weight
+B. Learning rate
+C. Bias (intercept)
+D. Loss function
+//c
+2.5 Hàm mất mát phổ biến nhất trong Linear Regression là:
+A. Cross-Entropy
+B. Mean Squared Error (MSE)
+C. Accuracy
+D. Hinge Loss
+//b
+2.6 Mục tiêu của quá trình huấn luyện Linear Regression là:
+A. Tối thiều hóa MSE
+B. Tối đa hóa MSE
+C. Tăng số lượng feature
+D. Giảm kích thước dũ liêu
+//a
+2.7 Training error là gì?
+A. Sai số trên tập huấn luyện
+B. Sai số trên tập kiểm tra
+C. Sai số trên validation set
+D. Sai số trung bình của toàn bộ dữ liệu
+//a
+2.8 Test error được tính trên tập dữ liệu nào?
+A. Training set
+B. Validation set
+C. Test set
+D. Toàn bộ dữ liệu
+//c
+2.9 Một mô hình được xem là overfitting khi:
+A. Training error cao, test error thấp
+B. Training error ror thấp, test error cao
+C. Training error cao, test error cao
+D. Training error thấp, test error thấp
+//b
+2.10 Một mô hình được xem là underfitting khi:
+A. Training error thấp, test error cao
+B. Training error cao, test error cao
+C. Training error thấp, test error thấp
+D. Training error cao, test error thấp
+//b
+2.11 Khi độ phức tạp của mô hình tăng lên, training error thường:
+A. Không đổi
+B. Dao động ngẫu nhiên
+C. Tăng
+D. Giảm
+//d
+2.12 Validation được sử dụng để:
+A. Giảm số lượng feature
+B. Chuẩn hóa dữ liệu
+C. Tăng kích thước dữ liệu
+D. Đánh giá khả năng tổng quát hóa của mô hình
+//d
+2.13 Validation set được lấy từ đâu?
+A. Test set
+B. Toàn bộ dữ liệu
+C. Training set
+D. D liêu mới
+//c
+2.14 Mô hinh tốt thường là mô hình có:
+A. Validation error lón nhất
+B. Training error lớn nhất
+C. Validation error nhỏ nhất
+D. Test error lớn nhất
+//c
+2.15 Trong K-Fold Cross Validation, dữ liệu được chia thành:
+A. 2 phần
+B. 3 phần
+C. K phần bằng nhau
+D. N phần ngẫu nhiên
+//c
+2.16 Trong K-Fold Cross Validation, ở mỗi lần lặp:
+A. Tất cả dữ liệu đều dùng để train
+B. Một fold dùng để validation
+C. Một fold dùng để test
+D. Không cần validation
+//b
+2.17 Cross-validation đặc biệt hữu ích khi:
+A. Có rất nhiều dữ liệu
+B. Dử liệu ít
+C. Không có nhiều
+D. Chỉ có một feature
+//b
+2.18 Regularization nhăm mục đích chính là:
+A. Tăng số lượng dữ liệu
+B. Giảm độ phức tạp mô hình
+C. Tăng số lượng tham số
+D. Loại bo training set
+b
+2.19 Trong Early Stopping, khỉ nào quá trình huấn luyện nên dừng?
+A. Khi test error giåm
+B. Khi số epoch bằng 0
+C. Khi training error tăng
+D. Khi validation error có xu hướng tăng
+//d
+2.20 Mục tiêu của regularized loss function là:
+A. Chỉ tối thiểu hóa training error
+B. Chỉ tối thiểu hóa regularization term
+C. Đồng thời tối thiểu hóa loss và regularization term
+D. Tăng số lượng feature
+//c
+II. Tự luận
+2.21
+- Là hiện tượng mô hình học quá sát dữ liệu huấn luyện, kể cả nhiễu và những đặc điểm không mang tính tổng quát.
+ Vì vậy, mô hình dự đoán tốt trên tập huấn luyện nhưng kém trên dữ liệu mới.
+Training error: thấp.
+Test error: cao.
+Cách khắc phục: regularization, giảm độ phức tạp mô hình, 
+tăng dữ liệu huấn luyện hoặc sử dụng Early Stopping.
+- Là hiện tượng mô hình quá đơn giản, không học được đầy đủ quy luật của dữ liệu.
+Training error: cao.
+Test error: thường cao.
+Cách khắc phục: tăng độ phức tạp mô hình, bổ sung đặc trưng phù hợp hoặc huấn luyện tốt hơn.
+ 
+ 2.22
+ K-Fold Cross Validation là phương pháp đánh giá mô hình bằng cách chia dữ liệu thành \(K\) phần gần bằng nhau, 
+ sau đó lặp lại quá trình huấn luyện và đánh giá \(K\) lần.
+
+Các bước thực hiện:
+1. Chia tập dữ liệu thành K fold.
+2. Chọn một fold làm tập validation, K-1fold còn lại làm tập huấn luyện.
+3. Huấn luyện mô hình trên tập huấn luyện và đánh giá trên tập validation.
+4. Lặp lại cho đến khi mỗi fold được sử dụng làm validation đúng một lần.
+5. Tính trung bình các kết quả đánh giá để ước lượng hiệu quả của mô hình.
+
+2.23
+Early Stopping là kỹ thuật dừng quá trình huấn luyện khi hiệu quả trên tập validation không còn cải thiện,
+ nhằm hạn chế hiện tượng overfitting.
+
+Nguyên lý hoạt động:
+1. Huấn luyện mô hình qua từng epoch.
+2. Sau mỗi epoch, đánh giá sai số trên tập validation.
+3. Theo dõi giá trị validation error tốt nhất.
+4. Nếu validation error không cải thiện sau một số epoch nhất định (patience), dừng huấn luyện.
+5. Khôi phục mô hình tại epoch có kết quả validation tốt nhất nếu có lưu checkpoint.
+Vì sao Early Stopping là một phương pháp regularization?
+Trong quá trình huấn luyện, mô hình thường học các quy luật chính trước, 
+sau đó có thể bắt đầu khớp cả nhiễu của dữ liệu huấn luyện.
+ Dừng huấn luyện đúng thời điểm giúp hạn chế việc học quá mức,
+ giảm overfitting và cải thiện khả năng tổng quát hóa.
+Early Stopping thực hiện điều này bằng cách giới hạn thời gian huấn luyện, 
+thay vì thêm trực tiếp một thành phần phạt vào hàm mất mát như L1 hoặc L2.

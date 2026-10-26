@@ -1,0 +1,174 @@
+6.1. Hàm sigmoid \(\sigma(z)=\frac{1}{1+e^{-z}}\) có giá trị đầu ra thuộc khoảng nào?
+
+A. \([0,\infty)\)
+B. \((-1,1)\)
+C. \([0,1]\)
+D. \((-\infty,\infty)\)
+
+//c
+
+6.2. Trong logistic regression, hàm mất mát thường dùng là:
+
+A. Mean Squared Error (MSE)
+B. Binary Cross-Entropy
+C. Hinge loss
+D. Mean Absolute Error
+
+//b
+
+6.3. Điều nào sau đây đúng về hàm mất mát cross-entropy trong logistic regression?
+
+A. Luôn có nghiệm dạng đóng
+B. Là hàm lồi theo tham số mô hình
+C. Không phân biệt được với MSE
+D. Chỉ dùng cho bài toán đa lớp
+
+//b
+
+6.4. Đạo hàm của \(\frac{1}{N}\sum_i (y_i-\hat y_i)x_i\) là dạng gradient trong logistic regression. Vậy tại điểm dữ liệu được dự đoán đúng với xác suất cao, gradient đóng góp:
+
+A. Lớn dần ra
+B. Lớn dần về 0
+C. Cực tiểu không có giá trị
+D. Cực đại bằng 1
+
+//c
+
+6.5. Mục tiêu của regularization trong logistic regression là gì?
+
+A. Cực tiểu khoảng cách Euclid
+B. Cực đại xác suất dự đoán
+C. Cực đại margin
+D. Cực tiểu độ lớn tham số
+
+//d
+
+6.6. Trong SVM tuyến tính, margin được tính bằng:
+A. \(\|w\|\)
+C. \(2/\|w\|\)
+D. \(\|w\|^2\)
+//c
+
+6.7. Support vector là những điểm:
+
+A. Nằm sai phía siêu phẳng
+B. Nằm đúng siêu phẳng
+C. Có ảnh hưởng lớn đến siêu phẳng
+D. Có khoảng cách đến siêu phẳng nhỏ hơn 1
+
+//c
+
+6.8. Trong SVM lề mềm, tham số \(C\) lớn dẫn đến:
+
+A. Margin rộng hơn, chấp nhận nhiều điểm vi phạm
+B. Margin hẹp hơn, hạn chế điểm vi phạm
+C. Tăng số lượng support vectors
+D. Bỏ qua hoàn toàn dữ liệu nhiễu
+
+//b
+
+6.9. Bài toán đối ngẫu của SVM có bao nhiêu biến?
+
+A. Bằng số chiều dữ liệu
+B. Bằng số mẫu huấn luyện \(N\)
+C. Luôn bằng 2
+D. Bằng số support vectors
+
+//b
+
+6.10. Khi sử dụng kernel trick trong SVM, dữ liệu được ánh xạ tường minh lên không gian đặc trưng lớn?
+
+A. Đúng
+B. Sai
+
+//b
+
+6.11. Mô hình logistic regression dùng hàm sigmoid để làm gì?
+
+A. Biến đổi đầu ra thành một số thực bất kỳ
+B. Biến đổi đầu ra thành xác suất nằm trong khoảng \((0,1)\) để biểu diễn xác suất
+C. Tạo ra một đường thẳng phân chia
+D. Tính khoảng cách từ điểm dữ liệu đến đường biên
+
+//b
+
+6.12. Hàm mất mát Binary Cross-Entropy cho một mẫu \((x_i,y_i)\) với dự đoán \(\hat y_i\) là:
+
+A. \(-[y_i\log \hat y_i+(1-y_i)\log(1-\hat y_i)]\)
+B. \((y_i-\hat y_i)^2\)
+C. \(|y_i-\hat y_i|\)
+D. \(\max(0,1-y_i\hat y_i)\)
+
+//a
+
+6.13. Khi nào gradient của logistic regression đối với một mẫu gần bằng 0?
+
+A. Khi mẫu đó bị phân loại sai hoàn toàn
+B. Khi mẫu đó ở rất gần biên
+C. Khi mẫu đó dự đoán đúng và có độ tin cậy cao
+D. Khi learning rate bằng 0
+
+//c
+
+6.14. Trong logistic regression, đạo hàm \(\frac{\partial J}{\partial w_j}=\frac{1}{N}\sum_i(\hat y_i-y_i)x_{ij}\). Điều gì xảy ra nếu tất cả \(x_{ij}\) đều bằng 0?
+
+A. Gradient bằng 0, trọng số \(w_j\) không thay đổi.
+B. Gradient bằng vô cùng.
+C. Gradient bằng tổng của các \(y_i\).
+D. Mô hình tự động thêm bias.
+
+//a
+
+6.15. Vì sao hàm mất mát Mean Squared Error ít được dùng cho logistic regression?
+
+A. Vì MSE luôn dương.
+B. Vì MSE không phù hợp cho bài toán phân lớp, dễ làm cực tiểu địa phương.
+C. Vì MSE không khả vi.
+D. Vì MSE chỉ dùng cho hồi quy tuyến tính.
+
+//b
+
+6.16. Trong SVM tuyến tính, mục tiêu tối ưu \(\frac{1}{2}\|w\|^2\) nhằm mục đích gì?
+
+A. Giảm số lượng support vectors.
+B. Tăng bias của mô hình.
+C. Cực đại margin giữa hai lớp.
+D. Đưa mọi điểm dữ liệu về cùng một phía.
+
+//c
+
+6.17. Trong bài toán đối ngẫu của SVM, những mẫu nào có \(\alpha_i=0\)?
+
+A. Các support vectors.
+B. Các điểm nằm trong margin.
+C. Các điểm bị phân lớp sai.
+D. Các điểm nằm ngoài margin, được phân lớp đúng và không ảnh hưởng đến siêu phẳng.
+
+//d
+
+6.18. Vai trò của tham số \(C\) trong SVM lề mềm là gì?
+
+A. Quyết định số chiều của không gian đặc trưng.
+B. Đánh đổi giữa độ rộng margin và mức phạt đối với các điểm vi phạm margin.
+C. Xác định tốc độ học của mô hình.
+D. Là ngưỡng để quyết định lớp dự đoán.
+
+//b
+
+6.19. Một điểm dữ liệu bị phân lớp sai trong SVM lề mềm sẽ có:
+
+A. \(\xi_i=0\)
+B. \(0<\xi_i<1\)
+C. \(\xi_i>1\)
+D. \(\xi_i<0\)
+
+//c
+
+6.20. Kernel trick trong SVM cho phép:
+
+A. Giảm số lượng mẫu huấn luyện.
+B. Tính toán trực tiếp trong không gian đặc trưng ban đầu mà không cần ánh xạ đặc trưng.
+C. Ngầm ánh xạ dữ liệu lên không gian đặc trưng nhiều chiều hơn mà không cần tính tường minh ánh xạ.
+D. Loại bỏ các điểm nhiễu.
+
+//c

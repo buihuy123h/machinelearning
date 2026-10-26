@@ -1,0 +1,179 @@
+5.1. Entropy của một tập dữ liệu chứa hai lớp với tỉ lệ 70% và 30% là:
+
+A. 0
+B. 1
+C. Xấp xỉ 0.88 bit
+D. Xấp xỉ 0.5 bit
+
+//c
+
+5.2. Phát biểu nào sau đây SAI về Information Gain?
+
+A. Gain càng lớn, thuộc tính càng có ích trong việc phân lớp.
+B. Gain được tính bằng entropy sau khi chia trừ entropy trước khi chia.
+C. ID3 chọn thuộc tính tính có Gain lớn nhất để làm nút phân nhánh.
+D. Gain có thể bằng 0 nếu phân nhánh không làm giảm entropy.
+
+//b
+
+5.3. Trong CART, chỉ số Gini bằng 0 khi:
+
+A. Tất cả các mẫu thuộc cùng một lớp.
+B. Các lớp phân bố đều nhau.
+C. Số lượng mẫu bằng số lượng lớp.
+D. Tập dữ liệu rỗng.
+
+//a
+
+5.4. Để tạo cây quyết định thường cần cắt tỉa:
+
+A. Để tăng tốc độ huấn luyện.
+B. Để giảm độ sâu, tránh quá khớp và cải thiện tổng quát hóa.
+C. Để tăng số lượng nút lá.
+D. Để giảm số lượng thuộc tính được sử dụng.
+
+//b
+
+5.5. Trong cây hồi quy, dự đoán tại nút lá là:
+
+A. Mode của các giá trị mục tiêu.
+B. Trung vị.
+C. Trung bình cộng của các giá trị mục tiêu.
+D. Giá trị lớn nhất.
+
+//c
+
+5.6. Điểm yếu nào là đặc trưng của mô hình cây quyết định?
+
+A. Không thể phân lớp dữ liệu phi tuyến.
+B. Không thể xử lý dữ liệu thiếu.
+C. Kém khả năng ngoại suy ngoài phạm vi dữ liệu huấn luyện.
+D. Không thể dùng cho bài toán hồi quy.
+
+//c
+
+5.7. Phát biểu nào sau đây là ĐÚNG về thuật toán ID3?
+
+A. ID3 luôn tạo ra cây nhị phân.
+B. ID3 sử dụng chỉ số Gini để chọn thuộc tính phân nhánh.
+C. ID3 có thể trực tiếp xử lý thuộc tính số liên tục mà không cần rời rạc hóa.
+D. ID3 chọn thuộc tính có Information Gain lớn nhất để làm nút phân nhánh.
+
+//d
+
+5.8. Một nhược điểm của ID3 là gì?
+
+A. Không thể tạo ra cây đa phân nhánh.
+B. Dễ bị ảnh hưởng bởi các thuộc tính có nhiều giá trị.
+C. Yêu cầu dữ liệu đầu vào phải được chuẩn hóa.
+D. Chỉ áp dụng được cho bài toán hồi quy.
+
+//b
+
+5.9. Phát biểu nào sau đây SAI về CART?
+
+A. CART chỉ xây dựng cây nhị phân.
+B. CART dùng chỉ số Gini cho bài toán phân lớp.
+C. CART không thể áp dụng cho bài toán hồi quy.
+D. CART tìm ngưỡng tối ưu cho thuộc tính số bằng cách sắp xếp và duyệt các điểm chia.
+
+//c
+
+5.10. Khi xây dựng cây hồi quy, CART chọn phép phân nhánh dựa trên tiêu chí nào?
+
+A. Information Gain
+B. Chỉ số Gini
+C. Reduction in Variance (Giảm phương sai)
+D. Entropy chia biến mục tiêu
+
+//c
+
+5.11. Entropy của một tập dữ liệu chứa đúng một lớp duy nhất có giá trị là bao nhiêu?
+
+A. 1 bit
+B. 0 bit
+C. 0.5 bit
+D. Không xác định
+
+//b
+
+5.12. Trong thuật toán ID3, việc chọn thuộc tính phân nhánh dừng lại khi nào?
+
+A. Khi tất cả các mẫu trong nút thuộc cùng một lớp, hoặc không còn thuộc tính nào để phân chia.
+B. Khi cây đạt đến độ sâu 3.
+C. Khi Information Gain của tất cả các thuộc tính đều lớn hơn 0.
+D. Khi tập dữ liệu có ít hơn 100 mẫu.
+
+//a
+
+5.13. Công thức Information Gain \(Gain(S,A)=H(S)-\sum_{v\in Values(A)}\frac{|S_v|}{|S|}H(S_v)\) thể hiện điều gì?
+
+A. Tổng entropy của các tập con sau khi chia.
+B. Mức giảm entropy trung bình khi phân nhánh theo thuộc tính A.
+C. Entropy của thuộc tính A.
+D. Tỉ lệ mẫu được phân lớp đúng.
+
+//b
+
+5.14. Cho tập dữ liệu có 10 mẫu, lớp “Có” (6 mẫu), lớp “Không” (4 mẫu). Entropy của tập này gần nhất với giá trị nào?
+
+A. 1 bit
+B. 0.97 bit
+C. 0.88 bit
+D. 0.5 bit
+
+//b
+
+5.15. Đặc điểm nào khiến ID3 không phù hợp với dữ liệu thực tế nếu không được cải tiến?
+
+A. Chỉ xây dựng cây nhị phân.
+B. Không xử lý được thuộc tính số liên tục một cách trực tiếp.
+C. Luôn tạo ra cây có độ sâu lớn.
+D. Yêu cầu dữ liệu phải được chuẩn hóa về \([0,1]\).
+
+//b
+
+5.16. Chỉ số Gini cho tập dữ liệu có 4 mẫu: 3 mẫu lớp A, 1 mẫu lớp B là bao nhiêu?
+
+A. 0.375
+B. 0.5
+C. 0.25
+D. 0.0
+
+//a
+
+5.17. Trong CART phân lớp, một phép chia được coi là tốt hơn nếu:
+
+A. Tổng Gini của hai tập con lớn hơn Gini của nút cha.
+B. Tổng Gini của hai tập con nhỏ hơn Gini của nút cha.
+C. Số lượng mẫu trong hai tập con bằng nhau.
+D. Cả hai tập con đều có Gini bằng 0.5.
+
+//b
+
+5.18. Khi xử lý thuộc tính hạng mục có 3 giá trị (X, Y, Z), CART sẽ thực hiện:
+
+A. Luôn tạo ba nhánh tương ứng với X, Y, Z.
+B. Chỉ chọn một giá trị và so sánh bằng.
+C. Duyệt các cách ghép nhóm thành hai nhóm để tìm phép chia nhị phân tốt nhất.
+D. Bỏ qua thuộc tính này vì không thể xử lý.
+
+//c
+
+5.19. Trong cây hồi quy, giá trị dự đoán tại nút lá được tính như thế nào?
+
+A. Là giá trị xuất hiện nhiều nhất.
+B. Là trung vị của các giá trị mục tiêu trong nút.
+C. Là trung bình cộng của các giá trị mục tiêu trong nút.
+D. Là giá trị lớn nhất của biến mục tiêu.
+
+//c
+
+5.20. Reduction in Variance lớn nhất đạt được khi:
+
+A. Phương sai của cả hai tập con đều lớn.
+B. Phương sai của cả hai tập con đều nhỏ.
+C. Tổng phương sai trong hai tập con lớn hơn phương sai nút cha.
+D. Phương sai của mỗi tập con bằng 0, tập con lá bằng phương sai nút cha.
+
+//b

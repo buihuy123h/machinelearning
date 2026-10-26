@@ -1,0 +1,182 @@
+4.1 Trong mạng nơ ron nhân tạo, các giá trị \(x_1, x_2, \ldots, x_m\) được gọi là:
+
+A. Trọng số
+B. Đầu vào
+C. Bias
+D. Đầu ra
+
+//b
+
+4.2 Trong mạng nơ ron nhân tạo, \(w_i\) biểu diễn:
+
+A. Đầu vào
+B. Sai số
+C. Trọng số kết nối
+D. Đầu ra
+
+//c
+
+4.3 Bias trong mạng nơ ron thường được sử dụng để:
+
+A. Tăng số lượng dữ liệu
+B. Dịch chuyển hàm kích hoạt
+C. Giảm số nơ-ron
+D. Chuẩn hóa dữ liệu
+
+//b
+
+4.4 Tầng nào của mạng nơ-ron nhận dữ liệu trực tiếp từ bên ngoài?
+
+A. Hidden Layer
+B. Output Layer
+C. Input Layer
+D. Activation Layer
+
+//c
+
+4.5 Tầng nào của mạng nơ-ron tạo ra kết quả dự đoán cuối cùng?
+
+A. Input Layer
+B. Hidden Layer
+C. Output Layer
+D. Bias Layer
+
+//c
+
+4.6 Trong mạng nơ-ron nhân tạo, tầng ẩn (Hidden Layer) là tầng:
+
+A. Nằm giữa tầng đầu vào và tầng đầu ra
+B. Tạo ra kết quả dự đoán cuối cùng
+C. Nhận dữ liệu trực tiếp từ tập dữ liệu
+D. Chỉ chứa các bias
+
+//a
+
+4.7 Tại sao gọi là “tầng ẩn” (Hidden Layer)?
+
+A. Vì không có nơ-ron nào trong tầng
+B. Vì người dùng không quan sát trực tiếp các giá trị của tầng này từ dữ liệu đầu vào hoặc đầu ra
+C. Vì tầng này luôn có giá trị bằng 0
+D. Vì tầng này không tham gia tính toán
+
+//b
+
+4.8 Vai trò chính của tầng ẩn là:
+
+A. Lưu trữ dữ liệu huấn luyện
+B. Trích xuất và học các đặc trưng từ dữ liệu
+C. Chuẩn hóa dữ liệu
+D. Chia dữ liệu thành các nhóm
+
+//b
+
+4.9 Trong thư viện sklearn, khai báo hidden_layer_sizes=(3,2), nghĩa là:
+
+A. Một tầng gồm 5 nơ-ron
+B. Hai tầng đều 3 nơ-ron
+C. Ba tầng ẩn
+D. Hai tầng ẩn, lần lượt có 3 và 2 nơ-ron
+
+//d
+
+4.10 Mục đích của việc sử dụng nhiều tầng ẩn là:
+
+A. Học được các mối quan hệ phi tuyến phức tạp hơn
+B. Giảm số lượng trọng số
+C. Loại bỏ dữ liệu nhiễu
+D. Giảm kích thước dữ liệu
+
+//a
+
+4.11 Nếu tất cả các nơ-ron trong tầng ẩn sử dụng hàm tuyến tính \(f(x)=x\), việc thêm nhiều tầng sẽ:
+
+A. Luôn làm tăng độ chính xác
+B. Giảm số trọng số
+C. Loại bỏ overfitting
+D. Không làm tăng khả năng biểu diễn phi tuyến của mạng
+
+//d
+
+4.12 Một tầng ẩn có 5 nơ-ron nhận tín hiệu từ 3 đầu vào. Không tính bias, số trọng số cần có là:
+
+A. 8
+B. 10
+C. 15
+D. 20
+//c
+
+4.13 Lan truyền xuôi (Forward Propagation) là quá trình:
+
+A. Tính gradient
+B. Tính đầu ra của mạng từ dữ liệu đầu vào
+C. Cập nhật trọng số
+D. Chuẩn hóa dữ liệu
+
+//b
+
+4.14 Hàm mất mát (Loss Function) được sử dụng để:
+
+A. Đo mức độ sai khác giữa giá trị dự đoán và giá trị thực
+B. Tăng số lượng nơ-ron
+C. Giảm kích thước dữ liệu
+D. Tạo dữ liệu mới
+
+//a
+
+4.15 Backpropagation được sử dụng để:
+
+A. Tính đầu ra của mạng
+B. Tính gradient của hàm mất mát
+C. Chuẩn hóa dữ liệu
+D. Tăng số tầng ẩn
+
+//b
+
+4.16 Trong quá trình lan truyền ngược, sai số được truyền theo hướng:
+
+A. Input → Output
+B. Input → Hidden
+C. Output → Input
+D. Ngẫu nhiên
+
+//c
+
+4.17 Gradient Descent được sử dụng để:
+
+A. Cập nhật trọng số nhằm giảm hàm mất mát
+B. Tăng số lượng dữ liệu
+C. Chia dữ liệu thành các cụm
+D. Chuẩn hóa dữ liệu
+
+//a
+
+4.18 Mục tiêu cuối cùng của quá trình huấn luyện mạng nơ-ron là:
+
+A. Tăng số lượng tầng
+B. Tăng số lượng trọng số
+C. Giảm giá trị của hàm mất mát
+D. Tăng số lượng mẫu dữ liệu
+
+//c
+
+4.19 Cho mạng nơ-ron có cấu tạo gồm:
+- Tầng đầu vào có 2 nơ-ron.
+- 1 tầng ẩn có 2 nơ-ron.
+- Tầng đầu ra có 1 nơ-ron.
+- Hàm kích hoạt là ReLU.
+Cho \(x=\begin{bmatrix}1\\2\end{bmatrix}\), \(W^{(1)}=\begin{bmatrix}1&0\\0&1\end{bmatrix}\), \(W^{(2)}=[1\quad1]\).
+
+Không có bias. Giá trị đầu ra ở tầng đầu ra (output layer) là:
+A. 1
+B. 2
+C. 3
+D. 4
+
+//d
+
+4.20 Cho mạng nơ-ron có cấu tạo gồm:
+- Tầng đầu vào có 2 nơ-ron.
+- 1 tầng ẩn có 2 nơ-ron.
+- Tầng đầu ra có 1 nơ-ron.
+- Hàm kích hoạt là ReLU.
+//d

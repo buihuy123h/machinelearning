@@ -1,0 +1,271 @@
+7.1. K-means thuộc loại học nào?
+
+A. Học có giám sát
+B. Học không giám sát
+C. Học bán giám sát
+D. Học tăng cường
+
+//b
+
+7.2. Trong K-means, mỗi cụm được đại diện bởi:
+
+A. Điểm xa nhất trong cụm
+B. Trung vị của các điểm trong cụm
+C. Trung bình cộng của các điểm trong cụm
+D. Điểm gần tâm nhất
+
+//c
+
+7.3. Hàm mục tiêu của K-means cố gắng tối thiểu là:
+
+A. Tổng bình phương khoảng cách giữa các tâm cụm
+B. Tổng bình phương khoảng cách đến mỗi cụm (WCSS)
+C. Chi phí likelihood
+D. Log-likelihood
+
+//b
+
+7.4. Phát biểu nào về sự hội tụ của K-means là đúng?
+
+A. Luôn hội tụ đến cực tiểu toàn cục
+B. Có thể dao động không hồi tụ
+C. Hội tụ đến cực tiểu cục bộ sau số hữu hạn bước
+D. Không bao giờ hội tụ nếu nhiều dữ liệu
+
+//c
+
+7.5. Trong thuật toán K-means cơ bản, tâm cụm được cập nhật như thế nào?
+
+A. Bằng điểm dữ liệu gần nhất với tâm
+B. Bằng trung vị của các điểm trong cụm
+C. Bằng trung bình của các điểm trong cụm
+D. Bằng cách gradient descent
+
+//c
+
+7.6. Khởi tạo tâm trong K-means có ảnh hưởng gì?
+
+A. Không ảnh hưởng gì vì luôn hội tụ tối ưu
+B. Ảnh hưởng đến độ tối ưu và kết quả phân cụm cuối cùng
+C. Chỉ ảnh hưởng đến số vòng lặp, không ảnh hưởng đến kết quả
+D. Ảnh hưởng nhưng không có gì thay đổi
+
+//b
+
+7.7. K-means++ khác gì so với khởi tạo ngẫu nhiên thông thường?
+
+A. Chọn các tâm ban đầu hoàn toàn ngẫu nhiên
+B. Chọn tâm đầu tiên là gốc tọa độ
+C. Chọn các tâm sao cho chúng ở xa nhau với xác suất cao
+D. Chọn tâm là các điểm gần biên nhất
+
+//c
+
+7.8. Độ phức tạp của một vòng lặp K-means với \(N\) điểm, \(K\) cụm, \(d\) chiều là:
+
+A. \(O(N\cdot d)\)
+B. \(O(N\cdot K\cdot d)\)
+C. \(O(K^2\cdot d)\)
+D. \(O(N\cdot \log N)\)
+
+//b
+
+7.9. Khi số cụm \(K\) tăng, WCSS (inertia) thường:
+
+A. Luôn tăng
+B. Luôn giảm
+C. Giữ nguyên
+D. Tăng rồi giảm
+
+//b
+
+7.10. Nhược điểm đáng kể của K-means là gì?
+
+A. Không thể xử lý dữ liệu nhiều chiều
+B. Cần biết trước số cụm \(K\) và giả định cụm hình cầu
+C. Luôn cho kết quả khác nhau
+D. Chỉ chạy được trên dữ liệu có dưới 1000 điểm
+
+//b
+
+7.11. Trong bước gán nhãn cụm của K-means, một điểm được gán vào cụm:
+
+A. Tâm xa nhất
+B. Tâm gần nhất theo khoảng cách Euclid
+C. Một tâm ngẫu nhiên
+D. Tâm có silhouette cao nhất
+
+//b
+
+7.12. K-means có thể áp dụng với độ đo khoảng cách nào?
+
+A. Chỉ Euclidean
+B. Euclidean và Manhattan
+C. Bất kỳ metric nào
+D. Chỉ Cosine similarity
+
+//a
+
+7.13. Đối với K, phương pháp “elbow” dựa trên:
+
+A. Độ thay đổi WCSS theo K, tìm điểm khuỷu tay
+B. Độ chính xác phân lớp
+C. Giá trị log-likelihood
+D. Số tâm tối ưu
+
+//a
+
+7.14. Khi cụm thực sự có hình dạng không lồi (ví dụ vòng tròn đồng tâm), K-means sẽ:
+
+A. Phân tách hoàn hảo
+B. Đập khó khăn và thường phân sai
+C. Chỉ cần tăng K là được
+D. Không hoạt động
+
+//b
+
+7.15. Thuật ngữ “inertia” trong scikit-learn tương ứng với:
+
+A. Tổng khoảng cách từ điểm đến tâm
+B. Tổng bình phương khoảng cách đến tâm (WCSS)
+C. Số vòng lặp cần để hội tụ
+D. Số điểm bị gán sai
+
+//b
+
+7.16. Điều gì xảy ra nếu trong quá trình chạy, một cụm trở thành rỗng?
+
+A. Thuật toán dừng ngay
+B. Tâm cụm đó được giữ nguyên
+C. Tâm cụm đó có thể được khởi tạo lại hoặc bị loại bỏ
+D. Tất cả các điểm được đưa vào cụm đó
+
+//c
+
+7.17. So với k-medoids (PAM), K-means khác ở:
+
+A. Dùng điểm trung bình đại diện (medoid)
+B. Dùng trung bình (mean) có thể không trùng với điểm dữ liệu nào
+C. Sử dụng khoảng cách Mahalanobis
+D. Không cần chỉ định K
+
+//b
+
+7.18. Sau khi K-means hội tụ, nếu tiếp tục chạy thêm vòng lặp thì:
+
+A. Cần thực hiện lại toàn bộ dữ liệu
+B. Các tâm cụm sẽ tiếp tục thay đổi
+C. Các tâm và nhãn không thay đổi
+D. \(J\) tiếp tục tăng
+
+//c
+
+7.19. Ý tưởng chung chính của K-means có thể xem như trường hợp đặc biệt của thuật toán nào?
+
+A. Gradient boosting
+B. Kỳ vọng – cực đại (EM) cho Gaussian mixture với hiệp phương sai cầu
+C. Support vector machine
+D. Hồi quy Logistic
+
+//b
+
+7.20. Khi tập dữ liệu có các đặc trưng với thang đo rất khác biệt (tuổi từ 0–100, thu nhập từ 0–100 triệu), bước nên làm trước khi dùng K-means?
+
+A. Không cần làm gì
+B. Chuẩn hóa dữ liệu (standardize / normalize)
+C. Tăng K lên gấp đôi
+D. Đổi sang độ đo cosine
+
+//b
+
+DBSCAN
+
+7.21. DBSCAN là viết tắt của:
+
+A. Density-Based Spatial Clustering of Applications with Noise
+B. Distribution-Based Sampling Clustering and Noise
+C. Distance-Based Scanning Clustering Algorithm
+D. Data-Based Smart Clustering Network
+
+//a
+
+7.22. Tham số nào không có trong DBSCAN?
+
+A. \(\varepsilon\) (eps)
+B. minPts
+C. Số cụm \(K\)
+D. Hàm khoảng cách
+
+//c
+
+7.23. Một điểm được gọi là core point nếu:
+
+A. Nó nằm ở trung tâm cụm
+B. Nó có ít nhất minPts điểm trong \(\varepsilon\)-lân cận
+C. Nó có khoảng cách đến mọi điểm khác nhỏ hơn hoặc bằng \(\varepsilon\)
+D. Nó không có láng giềng nào
+
+//b
+
+7.24. Điểm border point:
+
+A. Là core point nhưng ở rìa cụm
+B. Không phải core, nhưng nằm trong lân cận \(\varepsilon\) của một core point
+C. Luôn là nhiễu
+D. Là điểm có đúng minPts hàng xóm
+
+//b
+
+7.25. Trong DBSCAN, một cụm được định nghĩa là:
+
+A. Tập các điểm gần tâm cụm nhất
+B. Tập các điểm có mật độ liên kết
+C. Tập các điểm có khoảng cách đến một tâm nhỏ hơn \(K\)
+D. Tập các điểm được gán nhãn bởi K-means
+
+//b
+
+7.26. Điểm nhiễu (noise) là:
+
+A. Điểm không thuộc bất kỳ cụm nào
+B. Điểm nằm trong trung tâm cụm
+C. Điểm core nhưng không có hàng xóm
+D. Điểm có mật độ cao nhất
+
+//a
+
+7.27. DBSCAN có ưu điểm gì so với K-means?
+
+A. Luôn nhanh hơn
+B. Không cần chỉ định số cụm, phát hiện được nhiều cụm hình dạng bất kỳ
+C. Không cần chọn tham số nào
+D. Hoạt động tốt với dữ liệu nhiều chiều mà không cần xử lý
+
+//b
+
+7.28. Hạn chế chính của DBSCAN là gì?
+
+A. Không thể chạy trên dữ liệu hơn 1000 điểm
+B. Rất nhạy cảm với tham số \(\varepsilon\) và minPts, khó khăn khi mật độ cụm khác nhau lớn
+C. Chỉ phát hiện được các cụm hình cầu
+D. Luôn yêu cầu dữ liệu được chuẩn hóa hoàn hảo
+
+//b
+
+7.29. Khi \(K\) được đặt quá lớn, DBSCAN có xu hướng:
+
+A. Tạo ra nhiều cụm nhỏ
+B. Hợp nhất tất cả điểm thành một cụm hoặc rất ít cụm
+C. Đánh dấu mọi điểm là nhiễu
+D. Không có tác động gì
+
+//b
+
+7.30. Khi minPts tăng, số điểm được coi là core:
+
+A. Tăng lên
+B. Giảm đi
+C. Không thay đổi
+D. Không phụ thuộc
+
+//b

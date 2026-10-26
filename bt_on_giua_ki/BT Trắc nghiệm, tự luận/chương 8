@@ -1,0 +1,184 @@
+8.1. Ý tưởng chính của học kết hợp là gì?
+
+A. Dùng một mô hình phức tạp duy nhất.
+B. Kết hợp nhiều mô hình học để đạt hiệu quả cao hơn.
+C. Tăng số đặc trưng để cải thiện dự đoán.
+D. Giảm số mẫu huấn luyện để tránh overfitting.
+
+//b
+
+8.2. Bootstrapping là kỹ thuật:
+
+A. Lấy mẫu ngẫu nhiên không hoàn lại.
+B. Lấy mẫu ngẫu nhiên có hoàn lại từ tập dữ liệu gốc.
+C. Tăng cường dữ liệu bằng nhiễu.
+D. Chuẩn hóa dữ liệu.
+
+//b
+
+8.3. Xác suất một quan sát không xuất hiện trong một mẫu bootstrap (kích thước \(n\)) xấp xỉ:
+
+A. 0.5
+B. 0.632
+C. 0.368
+D. 0.1
+
+//c
+
+8.4. Trong bagging, các mô hình được huấn luyện:
+
+A. Tuần tự, mỗi mô hình dựa vào lỗi mô hình trước.
+B. Độc lập trên cùng một tập dữ liệu.
+C. Độc lập trên các mẫu bootstrap khác nhau.
+D. Đồng thời chia sẻ trọng số.
+
+//c
+
+8.5. Bagging giúp giảm loại sai số nào hiệu quả nhất?
+
+A. Độ lệch (bias)
+B. Phương sai (variance)
+C. Nhiễu không thể giảm
+D. Cả bias và variance như nhau
+
+//b
+
+8.6. Trong Random Forest, mục đích của việc chọn ngẫu nhiên tập con đặc trưng tại mỗi nút là gì?
+
+A. Tăng độ chính xác của từng cây.
+B. Giảm tương quan giữa các cây.
+C. Giảm số lượng cây.
+D. Giảm số lượng nhánh con.
+
+//b
+
+8.7. Giá trị mặc định của số đặc trưng được xem xét tại mỗi nút cho bài toán phân loại trong Random Forest thường là:
+
+A. \(p\)
+B. \(\sqrt{p}\)
+C. \(\log_2 p\)
+D. \(p/3\)
+
+//b
+
+8.8. Out-of-bag (OOB) là gì?
+
+A. Lỗi trên tập huấn luyện.
+B. Tập dữ liệu không được dùng trong bootstrap.
+C. Phương pháp đánh giá mô hình bằng những mẫu không có trong mẫu bootstrap cho mỗi cây.
+D. Kỹ thuật chọn đặc trưng.
+
+//c
+
+8.9. Trong bagging, dự đoán cuối cùng cho hồi quy là:
+
+A. Trung vị các dự đoán thành phần.
+B. Trung bình các dự đoán thành phần.
+C. Biểu quyết đa số.
+D. Dự đoán của cây đầu tiên.
+
+//b
+
+8.10. Trong bagging, các mô hình con được huấn luyện:
+
+A. Độc lập.
+B. Song song.
+C. Tuần tự, mô hình sau tận dụng lỗi của mô hình trước.
+D. Trên cùng một mẫu bootstrap.
+
+//c
+
+8.11. AdaBoost cập nhật điều gì sau mỗi vòng lặp?
+
+A. Nhãn của dữ liệu.
+B. Trọng số của các mẫu huấn luyện.
+C. Số đặc trưng.
+D. Hàm mất mát.
+
+//b
+
+8.12. Công thức tính trọng số của weak learner thứ \(t\) trong AdaBoost là:
+\[
+\alpha_t=\frac{1}{2}\ln\left(\frac{1-\epsilon_t}{\epsilon_t}\right)
+\]
+
+Khi \(\epsilon_t=0.1\) thì \(\alpha_t\) xấp xỉ:
+
+A. 0.0
+B. 1.1
+C. 2.2
+D. 0.5
+
+//b
+
+8.13. Điều kiện để AdaBoost tiếp tục thêm weak learner?
+
+A. \(\epsilon_t>0.5\)
+B. \(\epsilon_t<0.5\) (tốt hơn đoán ngẫu nhiên).
+C. \(\epsilon_t=1\)
+D. Không phụ thuộc \(\epsilon_t\).
+
+//b
+
+8.14. Gradient Boosting khác AdaBoost cơ bản ở điểm nào?
+
+A. Dùng bagging thay vì boosting.
+B. Tối ưu hóa trực tiếp hàm mất mát bằng cách khớp phần dư.
+C. Chỉ dùng cho hồi quy.
+D. Không điều chỉnh trọng số.
+
+//b
+
+8.15. Trong Gradient Boosting với squared loss, mỗi cây mới khớp với:
+
+A. Nhãn gốc \(y\).
+B. Trọng số mẫu.
+C. Phần dư \(y-F_{m-1}(x)\).
+D. Đặc trưng ngẫu nhiên.
+
+//c
+
+8.16. Tại sao Random Forest thường ít overfitting hơn một cây quyết định đơn lẻ?
+
+A. Vì số cây ít hơn.
+B. Vì kết hợp nhiều cây và giảm phương sai.
+C. Vì chỉ dùng một cây duy nhất.
+D. Vì dữ liệu huấn luyện bị loại bỏ.
+
+//b
+
+8.17. XGBoost là một biến thể của:
+
+A. Random Forest
+B. Bagging
+C. Gradient Boosting
+D. AdaBoost
+
+//c
+
+8.18. Lỗi OOB trong Random Forest có thể thay thế cho:
+
+A. Tập huấn luyện.
+B. Tập kiểm tra (validation/test) để ước lượng sai số tổng quát.
+C. Tập dữ liệu đầu vào.
+D. Ma trận nhãn.
+
+//b
+
+8.19. Khi tăng số lượng cây trong Random Forest (số cây lớn), điều gì thường xảy ra?
+
+A. Mô hình nhanh chóng overfit.
+B. Lỗi OOB tăng lên.
+C. Lỗi tổng quát giảm dần rồi bão hòa, không tăng.
+D. Phương sai của ensemble tăng.
+
+//c
+
+8.20. Trong bagging, nếu base learner có độ lệch thấp và phương sai cao, bagging có thể giúp:
+
+A. Giảm độ lệch.
+B. Tăng độ lệch, giảm phương sai.
+C. Giảm phương sai mà không thay đổi nhiều độ lệch.
+D. Tăng cả phương sai và độ lệch.
+
+//c
